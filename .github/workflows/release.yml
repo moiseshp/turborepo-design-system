@@ -24,14 +24,4 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@3.6.2
         with:
           branch: gh-pages
-          folder: docs/storybook-static
-
-      #- name: Create Release Pull Request or Publish to npm
-        #id: changesets
-        #uses: changesets/action@v1
-        #with:
-          # This expects you to have a script called release which does a build for your packages and calls changeset publish
-          #publish: npm run release
-        # env:
-        #   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          #NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          folder: apps/docs/storybook-static
