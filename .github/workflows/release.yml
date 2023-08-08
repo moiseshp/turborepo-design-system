@@ -24,7 +24,7 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@3.6.2
         with:
           branch: gh-pages
-          folder: apps/docs/storybook-static
+          folder: /apps/docs/storybook-static
 
       #- name: Create Release Pull Request or Publish to npm
         #id: changesets
