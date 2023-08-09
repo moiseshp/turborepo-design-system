@@ -19,7 +19,7 @@ jobs:
       - name: Install and Build 🔧
         run: |
           npm install
-          cd apps/docs npm run build
+          npm run build-storybook
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@releases/v3
