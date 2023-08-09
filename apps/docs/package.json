@@ -1,6 +1,6 @@
 {
   "homepage": "https://moiseshp.github.io/turborepo-design-system",
-  "name": "turborepo-design-system",
+  "name": "@moiseshp/docs",
   "version": "0.0.0",
   "private": true,
   "scripts": {
