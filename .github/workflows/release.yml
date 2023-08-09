@@ -22,11 +22,11 @@ jobs:
           npm run build-storybook
 
       - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@releases/v3
+        uses: JamesIves/github-pages-deploy-action@3.6.2
         with:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BASE_BRANCH: main
           BRANCH: gh-pages
-          FOLDER: apps/docs/storybook-static
+          FOLDER: storybook-static
           CLEAN: true
-          TARGET_FOLDER: .
+          TARGET_FOLDER: apps/docs
