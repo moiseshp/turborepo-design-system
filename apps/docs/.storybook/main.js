@@ -1,6 +1,6 @@
 const path = require("path");
 
-const BASE_PATH = 'turborepo-design-system';
+const BASE_PATH = 'turborepo-design-system'; // GH_PAGES NAME PROJECT
 
 module.exports = {
   stories: ["../stories/**/*.stories.mdx", "../stories/**/*.stories.tsx"],
