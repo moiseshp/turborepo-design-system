@@ -27,6 +27,6 @@ jobs:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BASE_BRANCH: main
           BRANCH: gh-pages
-          FOLDER: apps/docs/pruebita
+          FOLDER: apps/docs/storybook-static
           CLEAN: true
           TARGET_FOLDER: .
