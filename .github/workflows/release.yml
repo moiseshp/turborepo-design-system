@@ -25,7 +25,7 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
           # ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          # GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
           BASE_BRANCH: main
           BRANCH: gh-pages
           FOLDER: apps/docs/pruebita
