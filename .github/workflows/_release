@@ -19,10 +19,10 @@ jobs:
       - name: Install and Build 🔧
         run: |
           npm install
-          cd apps/docs npm run build
+          npm run build-storybook
 
       - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@releases/v3
+        uses: JamesIves/github-pages-deploy-action@3.6.2
         with:
           # ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           # GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
