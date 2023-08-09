@@ -14,7 +14,7 @@ module.exports = {
       resolve: {
         alias: [
           {
-            find: "@moiseshp/core",
+            find: "@moiseshp/turborepo-core",
             replacement: path.resolve(
               __dirname,
               "../../../packages/@moiseshp/turborepo-core/"
