@@ -28,5 +28,5 @@ jobs:
         with:
           BASE_BRANCH: main
           BRANCH: gh-pages
-          FOLDER: pruebita
+          FOLDER: apps/docs/pruebita
           CLEAN: true
