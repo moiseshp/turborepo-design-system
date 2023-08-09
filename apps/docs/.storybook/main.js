@@ -1,5 +1,7 @@
 const path = require("path");
 
+const BASE_PATH = 'turborepo-design-system';
+
 module.exports = {
   stories: ["../stories/**/*.stories.mdx", "../stories/**/*.stories.tsx"],
   addons: ["@storybook/addon-links", "@storybook/addon-essentials"],
@@ -9,6 +11,7 @@ module.exports = {
   },
   async viteFinal(config, { configType }) {
     // customize the Vite config here
+    config.base = BASE_PATH;
     return {
       ...config,
       resolve: {
