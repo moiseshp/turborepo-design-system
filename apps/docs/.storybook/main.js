@@ -14,17 +14,17 @@ module.exports = {
     config.base = BASE_PATH;
     return {
       ...config,
-      resolve: {
-        alias: [
-          {
-            find: "@moiseshp/turborepo-core",
-            replacement: path.resolve(
-              __dirname,
-              "../../../packages/@moiseshp/turborepo-core/"
-            ),
-          },
-        ],
-      },
+      // resolve: {
+      //   alias: [
+      //     {
+      //       find: "@moiseshp/turborepo-core",
+      //       replacement: path.resolve(
+      //         __dirname,
+      //         "../../../packages/@moiseshp/turborepo-core/"
+      //       ),
+      //     },
+      //   ],
+      // },
     };
   },
 };
