@@ -19,23 +19,21 @@ jobs:
         with:
           node-version: 18
       - name: Install dependencies 🔧
-        run: |
-          npm install
-          npm run build-storybook
+        run: npm install
 
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@3.6.2
-        with:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          BASE_BRANCH: main
-          BRANCH: gh-pages
-          FOLDER: apps/docs/storybook-static
-
-      # - name: Create Release Pull Request or Publish to npm
-      #   id: changesets
-      #   uses: changesets/action@v1
+      # - name: Deploy 🚀
+      #   uses: JamesIves/github-pages-deploy-action@3.6.2
       #   with:
-      #     publish: npm run release
-      #   env:
-      #     GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-      #     NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      #     ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+      #     BASE_BRANCH: main
+      #     BRANCH: gh-pages
+      #     FOLDER: apps/docs/storybook-static
+
+      - name: Create Release Pull Request or Publish to npm
+        id: changesets
+        uses: changesets/action@v1
+        with:
+          publish: npm run release
+        env:
+          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

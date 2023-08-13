@@ -8,7 +8,8 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "changeset": "changeset",
     "version-packages": "changeset version",
-    "build-storybook": "turbo run build --filter=docs",
+    "storybook:build": "npm run build --workspace=apps/docs",
+    "storybook:deploy": "npm run deploy --workspace=apps/docs",
     "release": "turbo run build --filter=docs^... && changeset publish"
   },
   "devDependencies": {

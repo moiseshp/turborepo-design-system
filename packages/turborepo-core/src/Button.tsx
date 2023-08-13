@@ -5,7 +5,13 @@ export interface ButtonProps {
 }
 
 export function Button(props: ButtonProps) {
-  return <button>{props.children}</button>;
+  return <button style={{
+    backgroundColor: 'black',
+    color: 'white',
+    border: '3px solid gray',
+    padding: '12px 30px',
+    borderRadius: 30
+  }}>{props.children}</button>;
 }
 
 Button.displayName = "Button";

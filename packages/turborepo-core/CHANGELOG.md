@@ -1,5 +1,11 @@
 # @moiseshp/turborepo-core
 
+## 1.1.0
+
+### Minor Changes
+
+- modify button style
+
 ## 1.0.0
 
 ### Major Changes

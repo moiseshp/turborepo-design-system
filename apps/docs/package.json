@@ -1,15 +1,17 @@
 {
   "name": "@moiseshp/docs",
+  "homepage": "https://moiseshp.github.io/turborepo-design-system",
   "version": "0.0.0",
   "private": true,
   "scripts": {
     "dev": "start-storybook -p 6006",
     "build": "build-storybook --docs",
+    "deploy": "gh-pages -d storybook-static",
     "preview-storybook": "serve storybook-static",
     "clean": "rm -rf .turbo && rm -rf node_modules"
   },
   "dependencies": {
-    "@moiseshp/turborepo-core": "1.0.0",
+    "@moiseshp/turborepo-core": "*",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -23,6 +25,7 @@
     "@storybook/react": "^6.5.14",
     "@vitejs/plugin-react": "^1.3.2",
     "eslint-config-turbomoiseshp": "1.0.0",
+    "gh-pages": "^6.0.0",
     "serve": "^13.0.4",
     "typescript": "^4.9.3",
     "vite": "^2.9.15"

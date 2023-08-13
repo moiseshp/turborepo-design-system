@@ -1,4 +1,10 @@
 {
+  "compilerOptions": {
+    "jsx": "react"
+  },
+  "compilerOptions": {
+    "jsx": "react"
+  },
   "extends": "@moiseshp/turborepo-tsconfig/react-library.json",
   "include": ["."],
   "exclude": ["dist", "build", "node_modules"]
